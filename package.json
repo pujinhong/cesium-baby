@@ -1,0 +1,31 @@
+{
+  "name": "cesiumjs-vite-example",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "prettier": "prettier --write --no-config \"**/*\"",
+    "prettier-check": "prettier --check --no-config \"**/*\""
+  },
+  "devDependencies": {
+    "prettier": "^3.2.4",
+    "vite": "^5.4.2",
+    "vite-plugin-static-copy": "^1.0.0",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "@vitejs/plugin-vue-jsx": "^4.0.0"
+  },
+  "dependencies": {
+    "cesium": "1.120.0",
+    "less": "^4.2.0",
+    "pinia": "^2.1.7",
+    "vue": "^3.4.38",
+    "vue-router": "^4.3.3"
+  },
+  "lint-staged": {
+    "*.{js,html}": [
+      "prettier --write --no-config"
+    ]
+  }
+}
